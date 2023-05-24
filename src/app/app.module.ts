@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CategoryComponent } from './category/category.component';
 import { SpecialofferComponent } from './specialoffer/specialoffer.component';
 import { SearchproductComponent } from './searchproduct/searchproduct.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchproductComponent } from './searchproduct/searchproduct.component'
     NavbarComponent,
     CategoryComponent,
     SpecialofferComponent,
-    SearchproductComponent
+    SearchproductComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
