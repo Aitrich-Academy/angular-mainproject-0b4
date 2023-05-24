@@ -3,24 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CategoryComponent } from './category/category.component';
-import { SpecialofferComponent } from './specialoffer/specialoffer.component';
-import { SearchproductComponent } from './searchproduct/searchproduct.component';
-import { FooterComponent } from './footer/footer.component';
+import { UserModule } from './user/user.module';
+import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    CategoryComponent,
-    SpecialofferComponent,
-    SearchproductComponent,
-    FooterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserModule,
+    SharedmoduleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
