@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductDetailsService } from 'src/app/services/product-details.service';
 
 @Component({
   selector: 'app-searchproduct',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./searchproduct.component.css']
 })
 export class SearchproductComponent {
-
+  productData: any[] = []; // Initialize as an empty array
+  // or
+  constructor() { // Initialize in the constructor
+  }
 }
