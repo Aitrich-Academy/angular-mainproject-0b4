@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 
 
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -16,9 +17,11 @@ import { CategoryComponent } from './category/category.component';
     CategoryComponent,
     SearchproductComponent,
   ],
-  imports: [
+imports: [
     CommonModule,
+    
    
+  
   ]
 })
 export class SharedmoduleModule { }

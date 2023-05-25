@@ -7,8 +7,11 @@ import { ProductDetailsService } from 'src/app/services/product-details.service'
   styleUrls: ['./searchproduct.component.css']
 })
 export class SearchproductComponent {
-  productData: any[] = []; // Initialize as an empty array
+  public productData: any[] = []; // Initialize as an empty array
   // or
-  constructor() { // Initialize in the constructor
+  constructor(public productService: ProductDetailsService) { 
+    this.productService.getProducts()// Initialize in the constructor
   }
+
+ 
 }
