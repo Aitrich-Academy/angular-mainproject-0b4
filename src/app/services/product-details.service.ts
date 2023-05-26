@@ -42,7 +42,7 @@ export class ProductDetailsService {
     },
     {
       id:5,
-      image:"../../assets/imagesRectangle 5-4.png",
+      image:"../../assets/images/Rectangle 5-4.png",
       category: 'Electronics',
       productName:'Baju Wanita',
       productDesc:'lorem ipsum decorum consectetur',
@@ -62,7 +62,7 @@ export class ProductDetailsService {
 
   ]
 
-  getCategory(){
+  getProducts(){
     return this.productData;
   }
 }
