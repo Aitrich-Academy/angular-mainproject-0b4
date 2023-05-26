@@ -6,7 +6,7 @@ import { SpecialofferComponent } from './specialoffer/specialoffer.component';
 import { SearchproductComponent } from './searchproduct/searchproduct.component';
 import { CategoryComponent } from './category/category.component';
 
-
+import { AuthModule } from '../auth/auth.module';
 
 
 @NgModule({
@@ -19,6 +19,8 @@ import { CategoryComponent } from './category/category.component';
   ],
 imports: [
     CommonModule,
+    AuthModule,
+    
     
    
   
