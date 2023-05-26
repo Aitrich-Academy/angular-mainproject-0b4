@@ -4,7 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
-
+import { AuthModule } from './auth/auth.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,8 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
+    ReactiveFormsModule,
     UserModule,
     SharedmoduleModule
   ],
