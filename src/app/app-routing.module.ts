@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './sharedmodule/navbar/navbar.component';
 import { AuthModule } from './auth/auth.module';
-import { LoginComponent } from './auth/login/login.component';
-import { SignupComponent } from './auth/signup/signup.component';
 
 const routes: Routes = [
   { path:'', component:NavbarComponent},
