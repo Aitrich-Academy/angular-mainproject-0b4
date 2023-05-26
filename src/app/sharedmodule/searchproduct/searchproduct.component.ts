@@ -13,5 +13,4 @@ export class SearchproductComponent {
     this.productService.getProducts()// Initialize in the constructor
   }
 
-  
 }

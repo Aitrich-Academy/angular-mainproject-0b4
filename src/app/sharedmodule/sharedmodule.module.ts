@@ -7,6 +7,7 @@ import { SearchproductComponent } from './searchproduct/searchproduct.component'
 import { CategoryComponent } from './category/category.component';
 import { PlaceorderComponent } from './placeorder/placeorder.component';
 import { Routes,RouterModule,Router } from '@angular/router';
+import { AuthModule } from '../auth/auth.module';
 
 const shared: Routes = [
   { path:'', component:NavbarComponent},
@@ -23,8 +24,9 @@ const shared: Routes = [
     SearchproductComponent,
     PlaceorderComponent
   ],
-  imports: [
+imports: [
     CommonModule,
+    AuthModule,
     RouterModule.forRoot(shared)
   ],
   exports:[
