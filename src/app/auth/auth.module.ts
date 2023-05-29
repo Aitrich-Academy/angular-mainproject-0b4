@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule ,Routes} from '@angular/router';
+import { LogoutComponent } from './logout/logout.component';
 
 const authRoutes:Routes =[
   {path:'',component:LoginComponent},
@@ -15,16 +16,17 @@ const authRoutes:Routes =[
 @NgModule({
   declarations: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild(authRoutes),
   ],
-  exports: [RouterModule,
-    LoginComponent,
-    SignupComponent]
+  exports: [
+    RouterModule
+  ]
 
 })
 export class AuthModule { 

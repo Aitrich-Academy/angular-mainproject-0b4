@@ -27,7 +27,7 @@ const shared: Routes = [
 imports: [
     CommonModule,
     AuthModule,
-    RouterModule.forRoot(shared)
+    RouterModule.forChild(shared)
   ],
   exports:[
     RouterModule
