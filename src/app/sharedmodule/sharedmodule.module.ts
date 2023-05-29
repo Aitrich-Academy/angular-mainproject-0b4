@@ -26,11 +26,13 @@ const shared: Routes = [
   ],
 imports: [
     CommonModule,
-    AuthModule,
-    RouterModule.forChild(shared)
+  AuthModule,
+  RouterModule.forChild(shared)
   ],
   exports:[
-    RouterModule
-  ]
+   
+   RouterModule
+  ],
+ 
 })
 export class SharedmoduleModule { }
