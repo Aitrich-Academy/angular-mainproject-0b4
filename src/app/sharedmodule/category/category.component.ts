@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-category',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent {
-
+  public categoryData: any[] = []; // Initialize as an empty array
+  // or
+  constructor(public categoryService: CategoryService) { 
+    this.categoryService.getCategory()// Initialize in the constructor
+  }
 }
