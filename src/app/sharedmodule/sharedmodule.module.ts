@@ -8,7 +8,6 @@ import { CategoryComponent } from './category/category.component';
 
 
 
-
 @NgModule({
   declarations: [
     NavbarComponent,
@@ -20,8 +19,14 @@ import { CategoryComponent } from './category/category.component';
 imports: [
     CommonModule,
     
+    
+
+    
    
   
+  ],
+  exports:[
+    
   ]
 })
 export class SharedmoduleModule { }
