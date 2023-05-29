@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 
+// import { ProductDetailsService } from './services/product-details.service';
+
+import { AuthModule } from './auth/auth.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,8 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
+    ReactiveFormsModule,
     UserModule,
     SharedmoduleModule
   ],
