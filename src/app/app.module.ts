@@ -9,6 +9,7 @@ import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
 
 import { AuthModule } from './auth/auth.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AuthModule,
     ReactiveFormsModule,
     UserModule,
-    SharedmoduleModule
+    SharedmoduleModule,
+    HttpClient,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
