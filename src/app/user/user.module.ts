@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { UsersidebarComponent } from './usersidebar/usersidebar.component';
 import { MyorderComponent } from './myorder/myorder.component';
-import { SharedmoduleModule } from '../sharedmodule/sharedmodule.module';
 import { UsernavbarComponent } from './usernavbar/usernavbar.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { AuthModule } from '../auth/auth.module';

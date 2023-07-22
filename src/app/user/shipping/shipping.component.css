@@ -76,7 +76,7 @@ object-fit: contain;
 }
 .place
 {
-    background-image: url('../../assets/images/profile-tick.png');
+    background-image: url('../../../assets/images/profile-tick.png');
     background-repeat: no-repeat;
     background-position: 380px ;
    
@@ -84,7 +84,7 @@ object-fit: contain;
 }
 .place1
 {
-    background-image: url('../../assets/images/card.png');
+    background-image: url('../../../assets/images/card.png');
     background-repeat: no-repeat;
     background-position: 380px;
 }
@@ -94,7 +94,7 @@ object-fit: contain;
 }
 .place2
 {
-    background-image: url('../../assets/images/eye-slash.png');
+    background-image: url('../../../assets/images/eye-slash.png');
     background-repeat: no-repeat;
     background-position: 160px;
 }
