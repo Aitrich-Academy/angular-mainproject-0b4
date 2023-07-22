@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import { AuthRoutingModule } from './routing/auth-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule ,Routes} from '@angular/router';
-import { LogoutComponent } from './logout/logout.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { UserhomeModule } from '../userhome/userhome.module';
+import { AdminhomeModule } from '../adminhome/adminhome.module';
 
-const authRoutes:Routes =[
-  {path:'',component:LoginComponent},
-  { path:'login', component: LoginComponent},
-  {path:'signup',component:SignupComponent},
-];
 
 
 @NgModule({
@@ -21,16 +18,11 @@ const authRoutes:Routes =[
   ],
   imports: [
     CommonModule,
+    AuthRoutingModule,
     ReactiveFormsModule,
-    RouterModule.forChild(authRoutes),
-  ],
-  exports: [
-    RouterModule
+    UserhomeModule,
+    AdminhomeModule
+    
   ]
-
 })
-export class AuthModule { 
-  constructor(){
-    console.log('authmodule loaded');
-  }
-}
+export class AuthModule { }
