@@ -1,14 +1,15 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserModule } from './user/user.module';
-import { SharedmoduleModule } from './sharedmodule/sharedmodule.module';
+import { AdminhomeModule } from './adminhome/adminhome.module';
+import { LandingpageModule } from './landingpage/landingpage.module';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { TokenInterceptor } from './core/interceptors/token.interceptor';
 
-// import { ProductDetailsService } from './services/product-details.service';
 
-import { AuthModule } from './auth/auth.module';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule,
+    AdminhomeModule,
+    LandingpageModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    UserModule,
-    SharedmoduleModule
+    FormsModule
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
